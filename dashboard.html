@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>Dashboard</title>
+
+  <!--import bootstrap css -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+  <!--import style sheet -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!--import bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- CSS -->
+  <style>
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    table tbody {
+      display: table;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body style="background-color: #FAFAFA;">
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg " style="background-color: white;">
+    <div class="container-fluid">
+
+      <img class="toggalbtn me-2" src="./images/menu-bar.svg">
+
+
+      <img src="./images/header-logo.svg">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <form class="d-flex ms-3" role="search">
+            <img src="./images/search-icon.svg" width="15px" class="my-auto" />
+            <input class="form-control me-2 ms-2 border-0 " style="width: 60vw; background-color: white;" type="search"
+              placeholder="Search" aria-label="Search">
+
+          </form>
+        </ul>
+        <div class="d-flex align-items-center">
+          <img src="./images/notification-icon.svg" class="me-3" />
+          <img src="./images/profile.png" />
+          <a class="nav-link normal-font normal-color" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            John Doe
+          </a>
+          <img src="./images/downward-arrow.svg" />
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="row " style="--bs-gutter-x:0;">
+
+    <!-- Sidebar-->
+    <div class="col-lg-2 d-lg-block d-xl-block d-xxl-block bg-white " id="sidebarxyz">
+      <nav id="sidebarMenu" class="d-none d-lg-block sidebar  ">
+        <div class="position-sticky">
+          <div class="list-group list-group-flush mx-3 mt-4" style="height: 1280px;">
+
+
+
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple  mb-3 border-0"
+              style="background-color: #FFF3F4;">
+              <img src="images/dashboard-active.svg" style="height: 15px; width: 15px;">
+              <span class="normal-font" style="color:#C8242F;">Dashboard </span>
+            </a>
+            <a href="./innerpage.html"
+              class="list-group-item list-group-item-action py-2 ripple mb-3 border-0">
+              <img src="images/graph-default.svg" style="height: 15px; width: 15px;">
+              <span>Analysis</span></a>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0">
+              <img src="images/inbox-default.svg" style="height: 15px; width: 15px;">
+              <span>Inbox</span></a>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0">
+              <img src="images/clock-default.svg" style="height: 15px; width: 15px;">
+              <span>History</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
+                src="images/user-default.svg" style="height: 15px; width: 15px;">
+              <span>Users</span></a>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
+                src="images/maintenance-default.svg" style="height: 15px; width: 15px;">
+              <span>Maintenance</span></a>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
+                src="images/setting-default.svg" style="height: 15px; width: 15px;">
+              <span>Setting</span></a>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--dashboard content-->
+    <div class=" toggalbtn col-lg-10 col-sm-12 px-5" id="mainContent">
+      <h2 class="my-5 ms-3">Dashboard</h2>
+
+      <!--total values -->
+      <div class="row me-lg-4">
+        <div class="col-lg-2 col-md-6 col-sm-12 mb-2">
+          <div class="card border-0">
+            <div class=" row card-body">
+              <div class="col-3"><img src="images/star.svg" class="py-4"></div>
+              <div class="col-9 py-4">
+                <h5 class="card-title" style="text-align: center;">23,456</h5>
+                <p class="card-text " style="text-align: center;">New Products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-sm-12 mb-2 ms-auto">
+          <div class="card border-0">
+            <div class=" row card-body">
+              <div class="col-3"><img src="images/new-product.svg" class="py-4"></div>
+              <div class="col-9 py-4">
+                <h5 class="card-title" style="text-align: center;">2345</h5>
+                <p class="card-text " style="text-align: center;">Added Products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-sm-12 mb-2 ms-auto">
+          <div class="card border-0">
+            <div class=" row card-body">
+              <div class="col-3"><img src="images/total-product.svg" class="py-auto"
+                  style="height: 100px; width: 53px;">
+              </div>
+              <div class="col-9 py-4">
+                <h5 class="card-title" style="text-align: center;">32,456</h5>
+                <p class="card-text " style="text-align: center;">Total Products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-sm-12 mb-2 ms-auto">
+          <div class="card border-0">
+            <div class=" row card-body">
+              <div class="col-3"><img src="images/dollar-filled.svg" class="py-4"></div>
+              <div class="col-9 py-4">
+                <h5 class="card-title" style="text-align: center;">5678</h5>
+                <p class="card-text " style="text-align: center;">Today’s Sale</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-sm-12 mb-2 mx-auto">
+          <div class="card border-0">
+            <div class=" row card-body">
+              <div class="col-3"><img src="images/money-bag.svg" class="py-4"></div>
+              <div class="col-9 py-4">
+                <h5 class="card-title" style="text-align: center;">33,5342</h5>
+                <p class="card-text " style="text-align: center;">Total Sale</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!--graphs-->
+      <div class="row ms-1 mt-4">
+        <div class="col-lg-8 col-md-12 col-sm-12 p-4" style="background-color: white;">
+          <div class="col-12">
+            <nav class="navbar " style="background-color: white;">
+              <div class="container-fluid">
+                <h3>Sale</h3>
+                <span class="navbar-text">
+                  <span>Weekly </span>
+                  <span>Monthly </span>
+                  <span style="color:red ;border-bottom: 1px solid red;
+                    padding-bottom: 6px;
+                ">Yearly</span>
+                </span>
+              </div>
+
+            </nav>
+          </div>
+          <img src="images/data-graph.png" class="img img-fluid w-100">
+        </div>
+
+        <div class="col-lg-3 col-md-12 col-sm-12 ps-1 p-1 ms-lg-4 mt-sm-3 mt-lg-0 mt-md-3 mt-3"
+          style="background-color: white;">
+          <div class="row ms-1 mt-0">
+
+            <div class="col-12">
+              <nav class="navbar " style="background-color: white;">
+                <div class="container-fluid">
+                  <h3>Sales by Country</h3>
+                  <div>
+                    <img src="images/pie-chart.svg" class="img img-fluid w-100">
+
+                  </div>
+                  <span class="dot" style="height: 18px; width: 18px;"></span>
+                </div>
+            </div>
+
+            <div class="col-8"><i class="bi bi-circle-fill me-1" style="color: #C8242F;"></i>United States
+              of America</div><br><br>
+            <div class="col-4"><i class="bi bi-circle-fill me-1" style="color: #A2B86C;"></i>Canada</div>
+            <div class="col-8"><i class="bi bi-circle-fill me-1" style="color: #F16C20;"></i>Russia</div>
+            <div class="col-4"><i class="bi bi-circle-fill me-1" style="color: #EBC844;"></i>India</div>
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <!--deatils table-->
+      <div class="row ms-1 mt-4">
+        <div class="col-12 " style="background-color: white;">
+          <div class="col-12">
+            <nav class="navbar " style="background-color: white;">
+              <div class="container-fluid ">
+                <h3 style="font: normal normal medium 22px/29px Roboto;
+                  letter-spacing: 0px;
+                  color: #3E3E3E;">invoice</h3>
+                <a href="#" style="font: normal normal normal 12px/16px Roboto;
+                  letter-spacing: 0px;
+                  color: #C8242F;"><span>View all</span></a>
+              </div>
+            </nav>
+            <table class="table mt-3">
+              <tbody>
+                <tr style="font: normal normal normal 15px/20px Roboto;
+                letter-spacing: 1.5px;
+                color: #ADADAD;">
+                  <th scope="col">INVOICE</th>
+                  <th scope="col">COMPANY NAME</th>
+                  <th scope="col">EMAIL</th>
+                  <th scope="col">DUE DATE</th>
+                  <th scope="col">STATUS</th>
+                  <th scope="col">AMOUNT</th>
+                </tr>
+                <tr>
+                  <td>651535</td>
+                  <td>Public Adjusting Firm</td>
+                  <td>georgia.young@example.com</td>
+                  <td>24 May, 2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$47,800</td>
+                </tr>
+                <tr>
+                  <td>558612</td>
+                  <td>Other</td>
+                  <td>jessica.hanson@example.com</td>
+                  <td>24 May, 2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$98,000</td>
+                </tr>
+                <tr>
+
+                  <td>558612</td>
+                  <td>Vendor</td>
+                  <td>alma.lawson@example.com</td>
+                  <td>8 Sep, 2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$20,900</td>
+                </tr>
+                <tr>
+
+                  <td>558612</td>
+                  <td>Property Management Company</td>
+                  <td>kenzi.lawson@example.com</td>
+                  <td>22 Oct, 2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$10,570</td>
+                </tr>
+                <tr>
+
+                  <td>651535</td>
+                  <td>Subcontractor Company </td>
+                  <td>jackson.graham@example.com</td>
+                  <td>1 Feb, 2020</td>
+                  <td><span class="fail">Failed</span></td>
+                  <td>$10,200</td>
+                </tr>
+                <tr>
+
+                  <td>653518</td>
+                  <td>Mortgage Company</td>
+                  <td>felicia.reid@example.com</td>
+                  <td>22 Oct, 2020</td>
+                  <td><span class="pending">Pending</span></td>
+                  <td>$12,600</td>
+                </tr>
+                <tr>
+
+                  <td>487441</td>
+                  <td>TPA</td>
+                  <td>dolores.chambers@example.com</td>
+                  <td>21 Sep, 2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$11,170</td>
+                </tr>
+                <tr>
+
+                  <td>267400</td>
+                  <td>Fire Department</td>
+                  <td>nevaeh.simmons@example.com</td>
+                  <td>17 Oct, 2020</td>
+                  <td><span class="fail">Failed</span></td>
+                  <td>$28,000</td>
+                </tr>
+                <tr>
+
+                  <td>449003</td>
+                  <td>Insurance Carrier</td>
+                  <td>curtis.weaver@example.com</td>
+                  <td>21 Sep, 2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$10,000</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--import jquery-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!--import JS -->
+  <script src="./js/custom.js "></script>
+
+</body>
+
+</html>

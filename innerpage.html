@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Dashboard</title>
+
+    <!--import bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!--import style sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--import bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body style="background-color: #FAFAFA;">
+
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg " style="background-color: white;">
+        <div class="container-fluid">
+
+            <img class="toggalbtn me-2" src="./images/menu-bar.svg">
+
+
+            <img src="./images/header-logo.svg">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <form class="d-flex ms-3" role="search">
+                        <img src="./images/search-icon.svg" width="15px" class="my-auto" />
+                        <input class="form-control me-2 ms-2 border-0 " style="width: 60vw; background-color: white;"
+                            type="search" placeholder="Search" aria-label="Search">
+
+                    </form>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <img src="./images/notification-icon.svg" class="me-3" />
+                    <img src="./images/profile.png" />
+                    <a class="nav-link normal-font normal-color" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        John Doe
+                    </a>
+                    <img src="./images/downward-arrow.svg" />
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+    <div class="row " style="--bs-gutter-x:0;">
+
+        <!-- Sidebar-->
+        <div class="col-lg-2 d-lg-block d-xl-block d-xxl-block bg-white " id="sidebarxyz">
+            <nav id="sidebarMenu" class="d-none d-lg-block sidebar  ">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush mx-3 mt-4" style="height: 1280px;">
+
+
+
+                        <a href="./dashboard.html"
+                            class="list-group-item list-group-item-action py-2 ripple  mb-3 border-0">
+                            <img src="images/dashboard-default.svg" style="height: 15px; width: 15px;">
+                            <span class="normal-font">Dashboard </span>
+                        </a>
+                        <a href="innerpage.html"
+                            class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"
+                            style="background-color: #FFF3F4;">
+                            <img src="images/graph-active.svg" style="height: 15px; width: 15px;">
+                            <span class="normal-font" style="color:#C8242F;">Analysis</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0">
+                            <img src="images/inbox-default.svg" style="height: 15px; width: 15px;">
+                            <span>Inbox</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0">
+                            <img src="images/clock-default.svg" style="height: 15px; width: 15px;">
+                            <span>History</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
+                                src="images/user-default.svg" style="height: 15px; width: 15px;">
+                            <span>Users</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
+                                src="images/maintenance-default.svg" style="height: 15px; width: 15px;">
+                            <span>Maintenance</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
+                                src="images/setting-default.svg" style="height: 15px; width: 15px;">
+                            <span>Setting</span></a>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- inner page form-->
+        <div class="col-lg-10 p-5" id="mainContent">
+            <h2 class="mb-4 ms-3">Analysis</h2>
+
+            <div class="row">
+
+                <div class="col-11 mt-0 ms-2" style="background-color: white;">
+                    <div class="col-11 mt-4 ">
+                        <h4 class="ms-2">One Column</h4>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-12 mt-3">
+
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name"
+                                        required>
+                                </div>
+                                <select class="selectpicker form-control show-menu-arrow mt-3 w-100"
+                                    title="Choose one of the following...">
+                                    <option default>Dropdown </option>
+                                    <option>option1</option>
+                                    <option>option2</option>
+                                    <option>option3</option>
+                                    <option>option4</option>
+                                    <option>option5</option>
+
+                                </select>
+                            </div>
+
+                            <div class="form-group  mt-3">
+
+                                <textarea class="form-control" id="w3review" name="w3review" rows="5" cols="170"
+                                    placeholder="Multiple line"></textarea>
+
+                            </div>
+                            <div class="col-12 mt-0 ms-2" style="background-color: white;">
+                                <div class="col-12 mt-4 ">
+                                    <h4 class="ms-1">Two Column</h4>
+
+                                    <div class="form-group mt-3">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-12">
+                                                <input type="text" class="form-control mt-3" id="inputCity"
+                                                    placeholder="Name">
+                                            </div>
+                                            <div class="col-lg-6 col-sm-12">
+
+                                                <input type="text" class="form-control mt-3" id="inputCity "
+                                                    placeholder="User Name">
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div class="col-lg-6 col-sm-12">
+
+                                                <input type="text" class="form-control mt-3" id="inputCity"
+                                                    placeholder="Password">
+                                            </div>
+                                            <div class="col-lg-6 col-sm-12">
+                                                <select class="selectpicker form-control show-menu-arrow mt-3 w-100"
+                                                    title="Choose one of the following...">
+                                                    <option>Dropdown </option>
+                                                    <option>option1</option>
+                                                    <option>option2</option>
+                                                    <option>option3</option>
+                                                    <option>option4</option>
+                                                    <option>option5</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <h4 class="ms-1 mt-3">Three Column</h4>
+                                        <div class="form-group row mt-3">
+                                            <div class=" was-validated col-lg-4 col-sm-12">
+                                                <input type="text" class="form-control mt-3" id="form2Example1"
+                                                    id="inputCity" placeholder="Focus"
+                                                    aria-describedby="validationServer03Feedback" required>
+
+                                                <div id="validationServer03Feedback" class="invalid-feedback">
+                                                    Enter valid data
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-12">
+                                                <input type="password" class="form-control mt-3" id="inputCity"
+                                                    placeholder="Password">
+                                            </div>
+                                            <div class="col-lg-4 col-sm-12">
+                                                <input type="text" disabled class="form-control mt-3" id="inputCity"
+                                                    placeholder="johndoe" style="border-style: dashed ">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group col-md-2  mt-3">
+
+
+                                        </div>
+                                        <h4 class="ms-1 mt-3">Four Column</h4>
+
+                                        <div class="form-group row mt-3">
+                                            <div class="was-validated col-lg-3 col-sm-12">
+
+                                                <input type="text" class="  form-control mt-3" id="validationServer03"
+                                                    placeholder="UI Designer"
+                                                    aria-describedby="validationServer03Feedback"
+                                                    aria-placeholder="focus" required>
+
+                                                <div id="validationServer03Feedback" class="invalid-feedback">
+                                                    Enter valid data
+                                                </div>
+                                            </div>
+                                            <div class="was-validated col-lg-3 col-sm-12">
+                                                <input type="text" class="form-control mt-3" id="validationServer03"
+                                                    aria-describedby="validationServer03Feedback" placeholder="Name"
+                                                    required style="border-color: #ADADAD;">
+                                                <div style="color: #ADADAD; " id="validationServer03Feedback"
+                                                    class="invalid-feedback">
+                                                    Enter your full Name as per ID
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-sm-12">
+                                                <input type="text" class="form-control mt-3" id="inputCity"
+                                                    placeholder="User Name">
+                                            </div>
+                                            <div class="col-lg-3 col-sm-12">
+                                                <input type="text" class="form-control mt-3" id="inputCity"
+                                                    placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <h4 class="ms-1 mt-3">Other Design Element</h4>
+                                        <h5 class="mt-3 ms-1">File Upload</h5>
+                                        <div class="row ms-2 justify-content-flex-start">
+                                            <div class="col-lg-2"><button type="file"
+                                                    class="btn btn-outline-danger btn-lg  rounded-pill d-flex flex-direction-row flex-wrap-nowrap align-items-center"><img
+                                                        src="images/cloud-upload-icon.svg" class="pl-1 mr-3">
+                                                    Upload</button></div>
+                                            <p class="col-lg-2 DescUpload pt-2 ms-lg-3" style="font: normal normal normal 12px/16px Roboto;
+                                            letter-spacing: 0px;
+                                            color: #ADADAD;text-align: left;align-self: center;
+    margin: 0;">No item selected</p>
+                                        </div>
+
+                                        <h5 class="ms-1 mt-3 ">Radio Button</h5>
+
+
+                                        <div class=" form-check-inline ms-1">
+                                            <input type="radio" id="specifyColor" name="radio1" value="GFG">
+                                            <label class="form-check-label" for="inlineRadio1">Option 1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" id="specifyColor" name="radio1" value="GFG" checked>
+                                            <label class="form-check-label" for="inlineRadio2">Option 2</label>
+                                        </div>
+
+
+                                        <h5 class="ms-1 mt-3">Checkbox</h5>
+
+
+                                        <label class="checkbox-inline ms-2">
+                                            <input type="checkbox" class="ms-0" value="">&MediumSpace; Option 1
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" class="ms-3" value="" checked>&MediumSpace; Option 2
+                                        </label>
+
+                                        <h5 class="ms-1 mt-2 ">Snackbar</h5>
+
+                                        <div class="form-group mt-1">
+                                            <div class="row">
+
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <button type="button" style="text-align: left;"
+                                                        class="btn btn-outline-danger form-control mt-3"> <img
+                                                            src="./images/error-icon.svg" height="25px"
+                                                            aria-hidden="false" />
+                                                        This is
+                                                        an
+                                                        error message</button>
+                                                </div>
+
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <button type="button" style="text-align: left;"
+                                                        class="btn btn-outline-info form-control mt-3"> <img
+                                                            src="./images/info-icon.svg" height="25px"
+                                                            aria-hidden="false" /> This
+                                                        is an information message</button>
+                                                </div>
+
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <button type="button"
+                                                        class="btn btn-outline-warning  form-control mt-3"
+                                                        style="text-align: left;"> <img src="./images/warning-icon.svg"
+                                                            height="25px" aria-hidden="false" /> This is an warning
+                                                        message</button>
+                                                </div>
+
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <button type="button" style="text-align: left;"
+                                                        class="btn btn-outline-success form-control mt-3"> <img
+                                                            src="./images/success-icon.svg" height="25px"
+                                                            aria-hidden="false" /> This
+                                                        is an successs message</button>
+                                                </div>
+
+
+                                                <h5 class="ms-1 mt-3 mb-2">Call to action</h5>
+
+                                                <button type="button" class="btn btn-danger me-3 ms-3 mt-1"
+                                                    style="border-radius: 23px; width: 123px;"><span
+                                                        style="font: normal normal medium 18px/24px Roboto;font-weight: 500;">Primary</span></button>
+                                                <button type="button" class="btn btn-outline-danger me-3 ms-3 mt-1"
+                                                    style="border-radius: 23px; width: 123px;"><span
+                                                        style="font: normal normal  18px/24px Roboto;font-weight: 500;">Secondary</span></button>
+
+
+                                                <h5 class="ms-1 mt-3 mb-2">Tabs</h5>
+
+                                                <nav>
+                                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                        <button class="nav-link active text-secondary TabItem"
+                                                            id="nav-home-tab" data-bs-toggle="tab"
+                                                            data-bs-target="#nav-home" type="button" role="tab"
+                                                            aria-controls="nav-home" aria-selected="true">Tab 1</button>
+                                                        <button class="nav-link TabItem text-secondary"
+                                                            id="nav-profile-tab" data-bs-toggle="tab"
+                                                            data-bs-target="#nav-profile" type="button" role="tab"
+                                                            aria-controls="nav-profile" aria-selected="false">Tab
+                                                            2</button>
+                                                        <button class="nav-link TabItem text-secondary"
+                                                            id="nav-contact-tab" data-bs-toggle="tab"
+                                                            data-bs-target="#nav-contact" type="button" role="tab"
+                                                            aria-controls="nav-contact" aria-selected="false">Tab
+                                                            3</button>
+                                                    </div>
+                                                </nav>
+                                                <div class="tab-content" id="nav-tabContent">
+                                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                                        aria-labelledby="nav-home-tab" tabindex="0">Lorem ipsum, dolor
+                                                        sit amet consectetur adipisicing elit. Aspernatur laborum labore
+                                                        itaque illo beatae nam, voluptas eligendi fugiat commodi
+                                                        incidunt non sit consectetur, eaque cumque animi ullam. Et,
+                                                        animi odit voluptate, id iusto unde ipsa excepturi natus ratione
+                                                        repellendus commodi magni molestiae doloremque earum voluptatem
+                                                        minima. Dignissimos deserunt culpa beatae eveniet, voluptatibus
+                                                        itaque quia numquam dicta quibusdam optio minima esse maiores.
+                                                        Odit culpa magnam, provident praesentium excepturi nisi illum
+                                                        tenetur obcaecati accusantium, porro eum iusto! Amet fugit ipsa
+                                                        veniam. Eius, cum! Mollitia eos, excepturi sequi atque impedit
+                                                        fuga quisquam voluptatem sapiente non ratione iure ipsam
+                                                        repudiandae tempore, debitis obcaecati possimus.</div>
+                                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                                        aria-labelledby="nav-profile-tab" tabindex="0">Aspernatur
+                                                        laborum labore itaque illo beatae nam, voluptas eligendi fugiat
+                                                        commodi incidunt non sit consectetur, eaque cumque animi ullam.
+                                                        Et, animi odit voluptate, id iusto unde ipsa excepturi natus
+                                                        ratione repellendus commodi magni molestiae doloremque earum
+                                                        voluptatem minima. Dignissimos deserunt culpa beatae eveniet,
+                                                        voluptatibus itaque quia numquam dicta quibusdam optio minima
+                                                        esse maiores. Odit culpa magnam, provident praesentium excepturi
+                                                        nisi illum tenetur obcaecati accusantium, porro eum iusto! Amet
+                                                        fugit ipsa veniam. Eius, cum! Mollitia eos, excepturi sequi
+                                                        atque impedit fuga quisquam voluptatem sapiente non ratione iure
+                                                        ipsam repudiandae tempore, debitis obcaecati possimus.</div>
+                                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                                        aria-labelledby="nav-contact-tab" tabindex="0">Lorem ipsum dolor
+                                                        sit, amet consectetur adipisicing elit. Laborum aut repellat
+                                                        doloribus sunt tempora quos, quaerat perspiciatis nostrum, natus
+                                                        voluptates dolorum odit laudantium soluta autem ad ullam iusto
+                                                        ducimus vitae.
+
+                                                    </div>
+                                                </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--import jquery-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!--import JS -->
+    <script src="./js/custom.js "></script>
+
+</body>
+
+</html>

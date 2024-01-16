@@ -1,0 +1,99 @@
+/* import google roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+a {
+    text-decoration: none;
+
+}
+
+* {
+    font-family: roboto;
+}
+
+.normal-font {
+    font: normal normal normal 15px/20px Roboto !important;
+}
+
+.medium-font {
+    font: normal normal normal 25px/33px Roboto !important;
+}
+
+.big-font {
+    font: normal normal 300 40px/47px Roboto;
+}
+
+.font-weight {
+    font: normal normal 900 40px/53px Roboto;
+}
+
+.normal-color {
+    color: #ADADAD !important;
+}
+
+.active-color {
+    color: #C8242F !important;
+}
+
+.medium-color {
+    color: #3E3E3E;
+}
+
+.bg-maincolor {
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+}
+
+.bg-secondcolor {
+    background: #C8242F 0% 0% no-repeat padding-box;
+}
+
+.login-image {
+    box-shadow: 0px 4px 31px #0000000A;
+    border: 20px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
+.paid {
+    background: #EBFFEF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: #3CDD5F;
+    padding: 3px 10px;
+
+}
+
+.pending {
+    font: normal normal normal 15px/20px Roboto;
+    color: #BABABA;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.fail {
+    background: #FFF5F5 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #FF4545;
+    padding: 3px 10px;
+}
+
+.table>tbody>tr>td {
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+}
+
+
+.navbar-text {
+    padding-top: 0px !important;
+}
+
+.navbar-text>span {
+    font: normal normal normal 12px/16px Roboto;
+    color: #ADADAD;
+}
